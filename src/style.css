@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root{
+    --primary:#7FBDD2;
+    --seconday:#D8E4EA;
+    --primaryfont:'Aclonica', sans-serif;
+    --secondaryfont:'Abel', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.header{
+    display: flex;
+   justify-content: center;
+   align-items: center; 
+   background: var(--primary);
+   height: 70px;
+   font-family: var(--primaryfont);
+   font-size: 30px;
+}
+
+.menu,.home,.contact{
+    margin-left: 25px;
+}
+
+body{
+    background: var(--seconday);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 25px;
+    margin: 0px 80px 0px 80px;
+    row-gap: 71px;
+    width: 100%;
+   
+  }
+
+  .title{
+      grid-column: 2/8;
+      font-family: var(--primaryfont);
+      font-size: 90px;
+      padding-top: 55px;
+      
+  }
