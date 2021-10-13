@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 :root{
-    --primary:#7FBDD2;
+    --primary:#c4ff9e;
     --seconday:#D8E4EA;
     --primaryfont:'Aclonica', sans-serif;
     --secondaryfont:'Abel', sans-serif;
@@ -14,30 +14,55 @@
   }
 
 .header{
-    display: flex;
-   justify-content: center;
-   align-items: center; 
    background: var(--primary);
    height: 70px;
    font-family: var(--primaryfont);
    font-size: 30px;
+   
+   
 }
 
-.menu,.home,.contact{
-    margin-left: 25px;
+.header .grid{
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.home{
+    grid-column: 3/4;
+}
+
+.menu{
+    grid-column: 4/5;
+}
+
+.contact{
+    grid-column: 5/6;
 }
 
 body{
-    background: var(--seconday);
+    background: url("./assets/background-90.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+
 }
+
+
+
 
 .grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     column-gap: 25px;
-    margin: 0px 80px 0px 80px;
-    row-gap: 71px;
-    width: 100%;
+    margin: 0px 80px 25px 80px;
+    row-gap: 25px;
+
+    
+
    
   }
 
@@ -45,6 +70,90 @@ body{
       grid-column: 2/8;
       font-family: var(--primaryfont);
       font-size: 90px;
-      padding-top: 55px;
+      padding-top: 10px;
       
   }
+
+  .card{
+      grid-column: 3/6   ;
+      background-color: var(--primary);
+      font-family: var(--secondaryfont);
+      font-size: 33px;
+      border-radius: 10px;
+  
+      text-align: left;
+      padding:15px 5px 15px 15px;
+      line-height: 38px;
+        max-width: 500px;
+
+
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+      
+  }
+
+  .reviewer{
+      text-align: right;
+      padding-right: 15px;
+  }
+
+  .schedule{
+      text-align: center;
+  }
+  .schedule h2{
+      font-weight: normal;
+      margin-bottom: 15px;
+  }
+
+  .photo{
+      grid-column:6/8 ;
+      border-radius: 3px;
+      max-width: 500px;
+
+    }
+    
+    .first{
+
+        background: url("./assets/first.png"); 
+        background-size: cover ;
+        background-position: center;
+         background-repeat: no-repeat; 
+    }
+
+    .second{
+        background: url("./assets/second.png"); 
+        background-size: cover ;
+        background-position: center;
+         background-repeat: no-repeat; 
+        
+
+    }
+
+    .location{
+        text-align: center;
+    }
+
+    .locationDetail{
+        margin-top: 40px;
+    }
+
+    .footer{
+        width:100%;
+        background: var(--primary);
+        height: 70px;
+        font-family: var(--primaryfont);
+        font-size: 15px;
+        
+        
+    }
+    .footer .grid{
+        margin-top: 25px;
+        margin-bottom: 0px;
+        justify-items: center;
+        align-items: center;
+        height: 100%;
+
+    }
+
+    .credit{
+        grid-column: span 2 ;
+    }
