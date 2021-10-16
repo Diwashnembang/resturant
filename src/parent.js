@@ -4,12 +4,10 @@ export class common{
         this.mainDom=document.createElement("main");
     }
     
-    header(){
+    appendHeader(){
         const header= document.createElement('div');
         header.classList.add("header");
-        const options= document.createElement('div');
-        options.classList.add("grid");
-        header.appendChild(options);
+        this.dom.appendChild(header)
         
         //text inside options
         const home=document.createElement('div');
@@ -21,12 +19,16 @@ export class common{
         home.textContent="Home";
         menu.textContent="Menu";
         contact.textContent="contact"
-        this.dom.appendChild(header);
+
+        home.classList.add("option");
+        menu.classList.add("option");
+        contact.classList.add("option");
+       
 
         //adding doms inside header
-        options.appendChild(home);
-        options.appendChild(menu);
-        options.appendChild(contact);
+    header.appendChild(home);
+    header.appendChild(menu);
+    header.appendChild(contact);
         return header;         
 
     }
@@ -38,6 +40,8 @@ export class common{
         const titleDom = document.createElement("div");
         titleDom.textContent= title;
         titleDom.classList.add("title");
+        
+        titleDom.classList.add(`${title.split(' ')[0]}`.toLowerCase());
         this.mainDom.classList.add("grid");
             
         this.dom.appendChild(this.mainDom);
