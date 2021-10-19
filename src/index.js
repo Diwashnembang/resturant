@@ -62,7 +62,7 @@ const menuContent = {
         secondMenu: {
             firstDish: {
 
-                dishName: "Beer-Battered Fish & Chips",
+                dishName: "Beer-Battered Fish And Chips",
                 price: "16.59",
                 discription: "2 pieces of hand-battered Ocean Wise cod fillets, freshly dipped in our housemade beer batter and served with tartar sauce, coleslaw and fresh cut homestyle fries.",
 
