@@ -72,6 +72,10 @@ export class common{
 
     }
 
+    appendImages(images){
+        
+    }
+
     
 }
 

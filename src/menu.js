@@ -31,7 +31,7 @@ export class menu extends common{
             for (let i = 0; i < 1; i++) {
                 img.src=images[i];
                 images.splice(0,1);
-                img.alt="Food Img";
+                
                
                 
             }

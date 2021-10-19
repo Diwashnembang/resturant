@@ -1,3 +1,4 @@
+import { contact } from "./contact.js";
 import { home } from "./home.js";
 import { menu } from "./menu.js";
 import {common} from "./parent.js"
@@ -15,9 +16,8 @@ export class displayController {
 
 
     static clearScreen(dom) {
-        // while(dom.firstChild) {
-        //   dom.removeChild(dom.firstChild);
-        // }
+        const body=document.querySelector("body");
+        
         dom.remove()
     }
 
@@ -32,5 +32,12 @@ export class displayController {
         menupage.appendTitle(menuContent.title);
         menupage.appendMenu();
         menupage.appendFooter()
+    }
+
+    static createContactPage(dom,content){
+        const contactPage= new contact(dom,content);
+        contactPage.appendTitle(content.title)
+        contactPage.appendContact();
+        contactPage.appendFooter();
     }
 }

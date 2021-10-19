@@ -1,5 +1,4 @@
 import { displayController } from "./displayController";
-import { menu } from "./menu";
 import "./style.css";
 
 
@@ -93,6 +92,30 @@ const menuContent = {
 
 };
 
+const contactContact={
+    title:"Contact",
+    staffs:{
+        staffNo1:{
+            name:"Harry",
+            position:"Cook",
+            contact:"555-555-5554",
+            email:"totallyRealEmail@notFake.com",
+
+        },
+
+        staffNo2:{
+            name:"Nick",
+            position:"Manager",
+            contact:"555-555-5554",
+            email:"totallyRealEmail@notFake.com",
+
+        },
+
+    },
+    credit:{
+        first:"Made by Diwash Nembang",
+    },
+}
 
 
 const contentDom = document.querySelector("#content");
@@ -116,7 +139,13 @@ headerDom.forEach(header=>{
                 case "menu":
                 displayController.clearScreen(mainDom);
                 displayController.clearScreen(footerDom);
-                displayController.createMenupage(contentDom, menuContent);        
+                displayController.createMenupage(contentDom, menuContent); 
+                break;
+                
+                case "contact":
+                displayController.clearScreen(mainDom);
+                displayController.clearScreen(footerDom);
+                displayController.createContactPage(contentDom, contactContact); 
                 
                 break;
                 
