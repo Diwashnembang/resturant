@@ -240,18 +240,31 @@ main .menu {
 }
 
  .footer{
-   font-size:10px ;
+   font-size: 10px;
  }
   
 }
 
 @media (min-width:701px)and (max-width:900px){
 
-
+  .grid{
+    margin: 0px 8px 10px 8px;
+    column-gap: 16px;
+  } 
+ 
+  .title{
+    font-size: 55px;
+    text-align: start;
+    grid-column: 1/9;
+  }
   .card{
     grid-column: 2/8;
  
 
   }
 
+  .discription {
+    font-size: 20px;
+}
+  
 }
